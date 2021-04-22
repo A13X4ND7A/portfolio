@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+
+:root {
+	--codingColour-yellow: #c59e58;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.612;
+}
+
+.my-name {
+	font-size: 3rem;
+}
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hello {
+	color: #b2ccd6;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.bracket {
+	color: #c59e58;
+}
+.typing {
+	display: flex;
+	color: #b2ccd6;
+	font-size: 2rem;
+	/* text-transform: capitalize; */
+	border-right: 2px solid #c59e58;
+	padding: 0;
+	margin: 0;
+	animation: typing 20s steps(21) infinite, caret 0.7s infinite step-end;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.wd-txt {
+	color: #f78c6c;
+	padding-left: 0.5ch;
+	font-weight: 400;
+}
+
+@keyframes caret {
+	0%,
+	100% {
+		border-color: transparent;
+	}
+	50% {
+		border-color: #c59e58;
+	}
+}
+
+@keyframes typing {
+	0% {
+		width: 0ch;
+	}
+	10% {
+		width: 21ch;
+	}
+	30% {
+		width: 21ch;
+	}
+	50% {
+		width: 21ch;
+	}
+	60% {
+		width: 21ch;
+	}
+	90% {
+		width: 0ch;
+	}
+	100% {
+		width: 0ch;
+	}
+}
+
+.banner {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: #1a1a1a;
+}
+.banner::before {
+	content: '';
+	background-image: url('images/safar-safarov-MSN8TFhJ0is-unsplash.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.2;
+}
+
+.banner-content,
+.button {
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+	padding: 8rem 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	transition: 500ms ease;
+	background: transparent;
+}
+.nav-item button {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.8;
+	letter-spacing: 0.1rem;
+}
+
+nav-pills .nav-link.active {
+	background-color: rgb(15, 208, 214);
+	color: white;
+}
+
+.navbar.scrolled {
+	background: #000;
+}
+
+.entry-heading {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.main-content {
+	background-color: #ffffff;
+	color: #1a1a1a;
+}
