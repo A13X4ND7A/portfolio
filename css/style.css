@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
 }
 
 .banner {
@@ -27,17 +32,18 @@ body {
 	opacity: 0.1;
 }
 
-.my-name {
-	font-weight: 400;
-	color: #fff;
-}
-
 .hello {
-	color: #b2ccd6;
-	font-weight: 200;
-	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
+	color: #b2ccd6;
+	font-size: 8vw;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.my-name {
+	font-size: 7vw;
+	font-weight: 400;
+	color: #fff;
 }
 
 .bracket {
@@ -46,6 +52,7 @@ body {
 }
 .typing {
 	color: #b2ccd6;
+	font-size: 5vw;
 	font-weight: 100;
 	border-right: 2px solid #c59e58;
 	padding: 0;
