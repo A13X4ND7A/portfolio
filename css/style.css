@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 
+:root {
+	--color-mustardYellow: #c59e58;
+	--color-lightBlue: #b2ccd6;
+	--color-lightOrange: #f78c6c;
+}
 html {
 	font-size: 16px;
 }
@@ -7,6 +12,7 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 
 .banner {
@@ -35,10 +41,28 @@ body {
 .hello {
 	padding: 0;
 	margin: 0;
-	color: #b2ccd6;
+	color: var(--color-lightBlue);
 	font-size: 8vw;
 	font-weight: 200;
 	text-transform: uppercase;
+	animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.name-animation {
+	outline: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 7vw;
+	width: 100%;
 }
 .my-name {
 	font-size: 7vw;
@@ -47,54 +71,63 @@ body {
 }
 
 .bracket {
-	color: #c59e58;
+	color: var(--color-mustardYellow);
 	display: inline-block;
 }
-.typing {
+/* .bracket-left {
+	animation: slideFromLeft 10s;
+}
+@keyframes slideFromLeft {
+	from {
+		margin-left: -400%;
+		width: 300%;
+	}
+	to {
+		margin-left: 30%;
+		width: 100%;
+	}
+}
+
+.bracket-right {
+	animation: slideFromRight 3s;
+}
+@keyframes slideFromRight {
+	from {
+		margin-right: -400%;
+		width: 300%;
+	}
+	to {
+		margin-right: 30%;
+		width: 100%;
+	}
+} */
+#typing,
+#typing2,
+.tester2 {
 	white-space: nowrap;
 	overflow: hidden;
 	margin: 0 auto;
 	padding: 0;
-	color: #b2ccd6;
-	font-size: 5vw;
+	color: var(--color-lightBlue);
+	/* font-size: 5vw; */
 	letter-spacing: 0.12em;
 	font-weight: 100;
-	border-right: 2px solid #c59e58;
-	animation: typing 20s steps(21) infinite, caret 0.7s infinite step-end;
+	border-right: 2px solid var(--color-mustardYellow);
+	animation: blinking 0.7s infinite step-end;
 }
 
 .wd-txt {
-	color: #f78c6c;
+	color: var(--color-lightOrange);
 	padding-left: 0.5ch;
 	font-weight: 400;
 }
 
-@keyframes caret {
+@keyframes blinking {
 	0%,
 	100% {
 		border-color: transparent;
 	}
 	50% {
 		border-color: #c59e58;
-	}
-}
-
-@keyframes typing {
-	0% {
-		width: 0ch;
-	}
-
-	30% {
-		width: 21ch;
-	}
-
-	60% {
-		width: 21ch;
-	}
-	90% {
-		width: 0ch;
-	}
-	100% {
-		width: 0ch;
 	}
 }
