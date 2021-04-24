@@ -1,12 +1,16 @@
 const startText = document.getElementsByClassName('typing');
 const spanText = document.getElementsByClassName('wd-txt');
-const mainPhrase = ['I am a '];
-const spanPhrase = ['web developer'];
+const mainPhrase = ['I am not a'];
+const spanPhrase = ['web developer.'];
 
 let i = 0;
 let j = 0;
 
+let x = 0;
+let y = 0;
+
 isDone = false;
+isFinishedForward = false;
 
 function typeingText() {
 	if (i < mainPhrase.length) {
@@ -20,10 +24,16 @@ function typeingText() {
 	}
 
 	if (isDone) {
-		console.log('hooray');
+		if (y < spanPhrase[x].length) {
+			console.log(spanPhrase[x][y]);
+			y++;
+			if (y === spanPhrase[x].length) {
+				isDone = true;
+			}
+		}
 	}
 
-	setTimeout(typeingText, 800);
+	setTimeout(typeingText, 200);
 }
 
 typeingText();
