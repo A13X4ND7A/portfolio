@@ -15,6 +15,10 @@ body {
 	overflow-x: hidden;
 }
 
+.flex-inline {
+	display: flex;
+}
+
 .banner {
 	display: flex;
 	flex-direction: column;
@@ -101,9 +105,7 @@ body {
 		width: 100%;
 	}
 } */
-#typing,
-#typing2,
-.tester2 {
+#typing {
 	white-space: nowrap;
 	overflow: hidden;
 	margin: 0 auto;
@@ -116,7 +118,7 @@ body {
 	animation: blinking 0.7s infinite step-end;
 }
 
-.wd-txt {
+#wd-txt {
 	color: var(--color-lightOrange);
 	padding-left: 0.5ch;
 	font-weight: 400;
