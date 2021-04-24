@@ -1,44 +1,29 @@
-// // const typingTextDiv = document.getElementsByClassName('.typing');
+const startText = document.getElementsByClassName('typing');
+const spanText = document.getElementsByClassName('wd-txt');
+const mainPhrase = ['I am a '];
+const spanPhrase = ['web developer'];
 
-// const spanDiv = document.createElement('span');
-// const div = document.createElement('div');
-// const div2 = document.createElement('div');
+let i = 0;
+let j = 0;
 
-var str = "I am a <span class='wd-txt'>Web Developer</span>",
-	i = 0,
-	isTag,
-	text;
+isDone = false;
 
-(function type() {
-	text = str.slice(0, ++i);
-	if (text === str) return;
+function typeingText() {
+	if (i < mainPhrase.length) {
+		if (j < mainPhrase[i].length) {
+			console.log(mainPhrase[i][j]);
+			j++;
+			if (j === mainPhrase[i].length) {
+				isDone = true;
+			}
+		}
+	}
 
-	document.getElementById('typing').innerHTML = text;
+	if (isDone) {
+		console.log('hooray');
+	}
 
-	var char = text.slice(-1);
-	if (char === '<') isTag = true;
-	if (char === '>') isTag = false;
-
-	if (isTag) return type();
-	setTimeout(type, 80);
-})();
-
-var stringToBeTyped = "k am not <span class='wd-txt'>Web Developer</span>",
-	x = 0,
-	isTags,
-	text2;
-
-function type2() {
-	text2 = stringToBeTyped.slice(0, ++x);
-	if (text2 === stringToBeTyped) return;
-
-	document.getElementById('typing2').innerHTML = text2;
-
-	var char = text2.slice(-1);
-	if (char === '<') isTags = true;
-	if (char === '>') isTags = false;
-
-	if (isTags) return type2();
-	setTimeout(type2, 80);
+	setTimeout(typeingText, 800);
 }
-type2();
+
+typeingText();
