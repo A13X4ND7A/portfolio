@@ -23,22 +23,57 @@ var str = "I am a <span class='wd-txt'>Web Developer</span>",
 	setTimeout(type, 80);
 })();
 
-var stringToBeTyped = "k am not <span class='wd-txt'>Web Developer</span>",
-	x = 0,
-	isTags,
-	text2;
+var stringToBeTyped = "I am not a <span class='wd-txt'>Web Developer</span>";
+var textDiv = document.querySelector('.typing2');
+var x = 0;
+var text2,
+	isTags = true,
+	isBeingAdded = true;
 
 function type2() {
-	text2 = stringToBeTyped.slice(0, ++x);
-	if (text2 === stringToBeTyped) return;
+	setTimeout(function () {
+		textDiv.innerHTML = text2;
+		console.log(isBeingAdded);
 
-	document.getElementById('typing2').innerHTML = text2;
+		if (isBeingAdded) {
+			if (x > stringToBeTyped.length) {
+				console.log(x);
+				console.log(stringToBeTyped.length);
+				isBeingAdded = false;
+				setTimeout(function () {
+					type2();
+				}, 2000);
+				return;
+			} else {
+				x++;
+			}
+			text2 = stringToBeTyped.slice(1, x);
+			if (text2 === stringToBeTyped) return;
 
-	var char = text2.slice(-1);
-	if (char === '<') isTags = true;
-	if (char === '>') isTags = false;
+			var char = text2.slice(-1);
+			if (char === '<') {
+				isTags = true;
+				x++;
+			}
+			if (char === '>') {
+				isTags = false;
+				x++;
+			}
 
-	if (isTags) return type2();
-	setTimeout(type2, 80);
+			if (isTags) return type2();
+			setTimeout(type2, 80);
+		} else {
+			console.log('inElse');
+			text2 = stringToBeTyped.slice(x, 0);
+			if (text2 === stringToBeTyped) return;
+
+			var char = text2.slice(-1);
+			if (char === '>') isTags = true;
+			if (char === '<') isTags = false;
+
+			if (isTags) return type2();
+			setTimeout(type2, 80);
+		}
+	}, 120);
 }
 type2();

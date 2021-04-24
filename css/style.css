@@ -102,7 +102,7 @@ body {
 	}
 } */
 #typing,
-#typing2,
+.typing2,
 .tester2 {
 	white-space: nowrap;
 	overflow: hidden;

@@ -2,6 +2,7 @@ var typeText = document.querySelector('.tester2');
 var textToBeTyped = 'a software engineer';
 var index = 0,
 	isAdding = true;
+
 function playAnim() {
 	setTimeout(function () {
 		// set the text of typeText to a substring of
