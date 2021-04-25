@@ -110,11 +110,11 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	color: var(--color-lightBlue);
-	/* font-size: 5vw; */
-	letter-spacing: 0.12em;
+	font-size: 5vw;
 	font-weight: 100;
 	border-right: 2px solid var(--color-mustardYellow);
 	animation: blinking 0.7s infinite step-end;
+	height: 5vw;
 }
 
 #wd-txt {
