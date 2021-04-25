@@ -1,53 +1,73 @@
-const startText = document.getElementById('typing');
+var startText = document.getElementById('typing');
+var spanText = document.getElementById('wd-txt');
 
-const mainPhrase = ['and I am a'];
-const spanPhrase = ['web developer.'];
-const currentMainPhrase = [''];
-const currentSpanPhrase = [''];
+const textToBeTyped = ['I am a ', 'Web Developer.'];
+var currentMainPhrase = [];
+var currentSpanPhrase = [];
 
 let i = 0;
 let j = 0;
-let x = 0;
-let y = 0;
+let k = 0;
+let nextWord = false;
+let isDeleting1 = false;
+let isDeleting = false;
+let nextDelete = false;
 
-isDone = false; //check if the first loop is finished
-isFinishedForward = false; //check to see if the loops have finished printing overall
-
-function typeingText() {
-	if (!isFinishedForward) {
-		//loop one for the first half of the text
-		if (i < mainPhrase.length) {
-			if (j < mainPhrase[i].length) {
-				currentMainPhrase.push(mainPhrase[i][j]); //push each letter into a new array to be displayed
-				j++;
-				if (j === mainPhrase[i].length) {
-					isDone = true;
-				}
-			}
+function typeText() {
+	if (i < textToBeTyped.length) {
+		//first word add
+		if (!isDeleting && !nextWord && j <= textToBeTyped[0].length) {
+			currentMainPhrase.push(textToBeTyped[0][j]);
+			j++;
+			startText.innerText = currentMainPhrase.join('');
 		}
-		startText.innerText = currentMainPhrase.join('');
-
-		//create a span element for the second loop
-		startText.insertAdjacentHTML('beforeend', '<span id="wd-txt"></span>');
-		var spanText = document.getElementById('wd-txt'); //get the Element from the dom to allow input
-
-		setTimeout(() => {
-			if (isDone) {
-				//loop through the array and push to a second new array in order to output into the span
-				if (y < spanPhrase[x].length) {
-					currentSpanPhrase.push(spanPhrase[x][y]);
-					y++;
-					if (y === spanPhrase[x].length) {
-						isFinishedForward = true;
-					}
-				}
+		// after first word add
+		if (j === textToBeTyped[0].length) {
+			if (spanText == null) {
+				startText.insertAdjacentHTML('beforeend', '<span id="wd-txt"></span>');
+				spanText = document.getElementById('wd-txt');
 			}
-		}, 2000);
+			console.log(startText);
+			nextWord = true;
+		}
 
-		spanText.innerText = currentSpanPhrase.join('');
+		//second word add
+		if (!isDeleting && nextWord && k <= textToBeTyped[1].length) {
+			currentSpanPhrase.push(textToBeTyped[1][k]);
+			k++;
+			spanText.innerText = currentSpanPhrase.join('');
+		}
+
+		if (k === textToBeTyped[1].length) {
+			isDeleting = true;
+			nextWord = false;
+		}
+
+		if (isDeleting && !nextDelete && textToBeTyped[1].length >= k) {
+			currentSpanPhrase.pop(textToBeTyped[1][k]);
+			k--;
+			spanText.innerText = currentSpanPhrase.join('');
+			console.log('remove a letter from k', k);
+		}
+		if (isDeleting && !nextDelete && k === 0) {
+			nextWord = false;
+			nextDelete = true;
+		}
+
+		if (isDeleting && nextDelete && k === 0 && j <= textToBeTyped[0].length) {
+			currentMainPhrase.pop(textToBeTyped[0][j]);
+			j--;
+			startText.innerText = currentMainPhrase.join('');
+			console.log('remove a letter from j', j);
+		}
+
+		if (isDeleting && j === 0) {
+			isDeleting = false;
+			nextDelete = false;
+			spanText = null;
+		}
 	}
 
-	setTimeout(typeingText, 200);
+	setTimeout(typeText, 200);
 }
-
-typeingText();
+typeText();
