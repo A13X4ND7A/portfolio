@@ -1,0 +1,67 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="443.66" height="376.7" viewBox="0 0 443.66 376.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-2 {
+        font-size: 83.83px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-5, .cls-7 {
+        font-size: 59.54px;
+      }
+
+      .cls-5 {
+        fill: #1d1d1b;
+        font-family: Montserrat-Light, Montserrat;
+        font-weight: 300;
+        letter-spacing: -0.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cls-8 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M308.38,225h168.9a25.17,25.17,0,0,0,25.16-25.16V114.4a25.16,25.16,0,0,0-25.16-25.16H107.22A25.16,25.16,0,0,0,82.06,114.4v85.45A25.17,25.17,0,0,0,107.22,225h167" transform="translate(-77.06 -84.24)"/>
+    <g>
+      <path class="cls-1" d="M344.5,327.33V265.38s31.26-21.06,36.29,15" transform="translate(-77.06 -84.24)"/>
+      <path class="cls-1" d="M311.76,327.33V261.84s20.36-16.81,32.74,3.54" transform="translate(-77.06 -84.24)"/>
+      <path class="cls-1" d="M311.76,261.84V196.63a11.74,11.74,0,0,0-4-8.82c-12.87-11.22-25.49-4.46-31.74.42a10.68,10.68,0,0,0-4.06,8.42V346.8l-35.81-40.58A12.82,12.82,0,0,0,224.52,302c-8.46,1.35-20.71,6.5-19,25.29,2.08,22.25,55.51,83.28,78.32,108.42,6.77,7.45,15.24,16.67,25.13,18.56,17.9,3.42,45.34.44,74.83,0a29.34,29.34,0,0,0,28.8-29.14V286.8a12.42,12.42,0,0,0-6.88-11.21c-6-2.91-15.17-4.46-25,4.83v52.22" transform="translate(-77.06 -84.24)"/>
+    </g>
+  </g>
+  <text class="cls-2" transform="translate(28.86 76.85)"><tspan class="cls-3">A</tspan><tspan class="cls-4" x="60.53" y="0">v</tspan><tspan x="107.56" y="0">ailable </tspan></text>
+  <text class="cls-5" transform="translate(75.53 129.22)">F<tspan class="cls-6" x="36.44" y="0">or</tspan></text>
+  <text class="cls-7" transform="translate(253.91 129.45)">Hi<tspan class="cls-8" x="64.42" y="0">r</tspan><tspan class="cls-9" x="87.52" y="0">e</tspan></text>
+</svg>

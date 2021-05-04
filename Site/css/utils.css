@@ -1,0 +1,29 @@
+.container {
+	margin: 0 auto;
+	max-width: 1100px;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+/* COLOUR CLASSES */
+
+.mustard {
+	color: var(--color-mustardYellow);
+}
+.slate {
+	color: var(--color-slateGrey);
+}
+.silver {
+	color: var(--color-silver);
+}
+
+.charcoal {
+	color: var(--color-charcoal);
+}
