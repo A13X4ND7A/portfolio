@@ -49,6 +49,12 @@ h1.section-header {
 	text-transform: uppercase;
 }
 
+h3 {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 300;
+}
+
 p {
 	margin: 10px 0;
 	line-height: 1.6;

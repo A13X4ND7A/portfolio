@@ -57,12 +57,13 @@
 .github-box,
 .hireMe-box {
 	flex-direction: column;
-	/* max-width: 800px; */
+	color: var(--color-charcoal);
 	background-color: var(--color-lightBlue);
-	border-radius: 10px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 20%);
+	border-radius: 18.7436px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 11%);
 	position: relative;
 	padding: 15px;
+	margin: 10px;
 }
 
 .cta .fa-github {
@@ -108,4 +109,56 @@
 	font-size: 0.7rem;
 	margin: 0.2em;
 	display: inline-block;
+}
+
+#hire-me {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.role {
+	padding: 5px;
+	margin: 0 15px 36px 0;
+	background-color: var(--color-charcoal);
+	border-radius: 10px;
+}
+
+.role h3 {
+	color: #fff;
+}
+
+.role ul {
+	font-size: 0.65em;
+	color: #fff;
+	font-weight: 500;
+}
+
+.role ul li.right {
+	margin-left: 20px;
+}
+
+.expLoc {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #1c3b4e;
+	border-radius: 35.4545px 3.54545px 18.7436px;
+	width: 170px;
+	color: #fff;
+	padding: 10px 13px 0 20px;
+}
+
+.expLoc ul.right {
+	margin-left: 15px;
+}
+
+.expLoc ul {
+	font-size: 0.75rem;
+}
+
+.download-cv {
+	width: 231.11px;
+	height: 80px;
+	background-color: var(--color-lightBlue);
+	border-radius: 18.7436px;
 }

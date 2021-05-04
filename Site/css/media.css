@@ -1,3 +1,10 @@
+@media (min-width: 400px) {
+	.role {
+		padding: 10px;
+		margin: 0;
+	}
+}
+
 @media (min-width: 610px) {
 	/* for the skills section */
 	.column.right {
@@ -16,6 +23,10 @@
 	#repos.flex {
 		justify-content: space-between;
 	}
+
+	.role ul {
+		font-size: 1rem;
+	}
 }
 
 @media (min-width: 630px) and (max-width: 800px) {
@@ -23,11 +34,30 @@
 		font-size: 0.75rem;
 		margin-right: 0.5em;
 	}
+
+	.role {
+		margin-top: 123px;
+	}
+	#hire-me {
+		width: 70%;
+		margin: -63px 2px 0 -59px;
+	}
 }
 
-/* @media (min-width: 955px) {
-	.avatar {
-		float: left;
-		margin-right: 7px;
+/* ipad */
+@media (min-width: 768px) {
+	#hire-me {
+		width: 70%;
+		margin: -6px 2px 0 -59px;
 	}
-} */
+	.role {
+		margin-top: 70px;
+	}
+}
+
+@media (min-width: 800px) {
+	#hire-me {
+		width: 49%;
+		margin: 0;
+	}
+}
