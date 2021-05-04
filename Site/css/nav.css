@@ -68,7 +68,7 @@ nav.active ul li {
 nav ul a {
 	position: relative;
 	color: var(--color-lightBlue);
-	margin: 0 10px;
+	margin: 0 5px;
 	transition: border-bottom 250ms ease-in;
 }
 nav ul a:hover {

@@ -57,7 +57,7 @@
 .github-box,
 .hireMe-box {
 	flex-direction: column;
-	max-width: 800px;
+	/* max-width: 800px; */
 	background-color: var(--color-lightBlue);
 	border-radius: 10px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 20%);
@@ -74,6 +74,7 @@
 }
 #github-bio {
 	font-size: 0.75rem;
+	padding: 10px;
 }
 
 .avatar img {
@@ -84,7 +85,7 @@
 }
 
 .user-info ul li {
-	font-size: 1rem;
+	font-size: 0.75rem;
 	margin-right: 0.5em;
 }
 
@@ -94,8 +95,9 @@
 }
 
 #repos.flex {
-	justify-content: space-between;
 	max-height: 25px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 
 .repo {

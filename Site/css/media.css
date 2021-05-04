@@ -8,9 +8,26 @@
 	.user-info ul.flex {
 		max-height: 25px;
 	}
-
 	.user-info ul li {
 		font-size: 1rem;
 		margin-right: 0.5em;
 	}
+
+	#repos.flex {
+		justify-content: space-between;
+	}
 }
+
+@media (min-width: 630px) and (max-width: 800px) {
+	.user-info ul li {
+		font-size: 0.75rem;
+		margin-right: 0.5em;
+	}
+}
+
+/* @media (min-width: 955px) {
+	.avatar {
+		float: left;
+		margin-right: 7px;
+	}
+} */
