@@ -1,9 +1,5 @@
-/* HERO */
-.hero {
-	display: flex;
+.hero.flex {
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 100vh;
 	width: 100%;
 	background: #1a1a1a;
@@ -23,8 +19,6 @@
 
 .hello {
 	position: relative;
-	padding: 0;
-	margin: 0;
 	color: var(--color-lightBlue);
 	font-size: 8vw;
 	font-weight: 200;
@@ -51,9 +45,6 @@
 
 .name-animation {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: 7vw;
 	width: 100%;
 }
@@ -139,7 +130,6 @@
 #typing {
 	white-space: nowrap;
 	overflow: hidden;
-	padding: 0;
 	margin-top: 3em;
 	color: var(--color-lightBlue);
 	font-size: 4vw;

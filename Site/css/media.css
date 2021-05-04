@@ -1,0 +1,16 @@
+@media (min-width: 610px) {
+	/* for the skills section */
+	.column.right {
+		margin-left: 50px;
+	}
+
+	/* github box */
+	.user-info ul.flex {
+		max-height: 25px;
+	}
+
+	.user-info ul li {
+		font-size: 1rem;
+		margin-right: 0.5em;
+	}
+}

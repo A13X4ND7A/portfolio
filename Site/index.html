@@ -4,17 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/utils.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/hero.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+
 		<title>Alex Faller - Web Developer</title>
 	</head>
 	<body>
 		<header>
-			<nav id="nav">
+			<nav id="nav" class="flex">
 				<button id="hamburger" class="showMenu">
 					<svg
-						id="Layer_1"
+						id="hamburger-svg"
 						data-name="Layer 1"
 						xmlns="http://www.w3.org/2000/svg"
 						width="0.41in"
@@ -23,14 +28,14 @@
 					>
 						<defs></defs>
 						<path
-							id="top"
+							id="hamburger-top"
 							class="line"
 							d="M25.17,20.13l25-.38s3.58-.8,3.75-3c.07-.88.63-2.43-2.13-4s-5.36,2-5.36,2L29,32.74"
 							transform="translate(-25.16 -11.9)"
 						/>
 
 						<line
-							id="middle"
+							id="hamburger-middle"
 							class="line"
 							x1="0.06"
 							y1="12.05"
@@ -39,7 +44,7 @@
 						/>
 
 						<path
-							id="bottom"
+							id="hamburger-bottom"
 							class="line"
 							d="M25.33,27.82l25-.37s3.61.7,3.84,2.88c.1.88.7,2.41-2,4s-5.42-1.85-5.42-1.85L28.8,15.1"
 							transform="translate(-25.16 -11.9)"
@@ -54,26 +59,26 @@
 					<li><a class="nav-link" href="#">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="hero">
+			<div class="flex hero">
 				<h1 class="hello">Hello, my name is</h1>
-				<div class="name-animation">
+				<div class="name-animation flex">
 					<h1 class="my-name">Alexandra</h1>
 				</div>
 				<div id="typing"></div>
 			</div>
 		</header>
 
-		<div class="container"></div>
+		<div class="container">
 			<section class="skills">
 				<h1 class="section-header">
 					<span class="mustard">My</span><span class="slate"> skills</span>
 				</h1>
-				<ul class="grid-wrapper">
+				<ul class="grid-wrapper grid">
 					<li class="column">
-						<ul class="skill-box">
+						<ul class="grid skill-box">
 							<!--HTML-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									Html
 								</div>
@@ -85,8 +90,8 @@
 							</li>
 
 							<!--CSS-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									CSS
 								</div>
@@ -98,8 +103,8 @@
 							</li>
 
 							<!--JavaScript-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									JavaScript
 								</div>
@@ -111,8 +116,8 @@
 							</li>
 
 							<!--jQuery-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									jQuery
 								</div>
@@ -124,8 +129,8 @@
 							</li>
 
 							<!--react-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									React.js
 								</div>
@@ -139,11 +144,11 @@
 					</li>
 
 					<!-- right -->
-					<li class="column">
-						<ul class="skill-box">
+					<li class="column right">
+						<ul class="skill-box grid">
 							<!--Express.js-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									Express.js
 								</div>
@@ -155,8 +160,8 @@
 							</li>
 
 							<!--SCSS-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									SCSS
 								</div>
@@ -168,8 +173,8 @@
 							</li>
 
 							<!--Bootstrap-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									Bootstrap
 								</div>
@@ -181,8 +186,8 @@
 							</li>
 
 							<!--MongoDb-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									jQuery
 								</div>
@@ -193,8 +198,8 @@
 								<div class="skill-level-silver"></div>
 							</li>
 							<!--Node-->
-							<li class="skill-list-item">
-								<div class="skill-item">
+							<li class="skill-list-item flex">
+								<div class="skill-item flex">
 									<div class="bullet"></div>
 									Node.js
 								</div>
@@ -212,19 +217,19 @@
 
 			<section class="cta">
 				<div class="container">
-				<ul class="cta-boxes">
+				<ul class="cta-boxes grid">
 					<li class="github-box">
 						<i class="fab fa-github"></i>
 						<div class="avatar" ><img id="avatar" src="https://randomuser.me/api/portraits/lego/3.jpg"/></div>
 						<div class="user-info">
-						
-						<div id="github-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, id!</div>
-						
-						<ul>
+						<ul class="flex">
 							<li id="following"> </li>
 							<li id="followers">400 <strong>Followers</strong></li>
 							<li id="repositories">200 <strong>Repositories</strong></li>
 						</ul>
+						<div id="github-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, id!</div>
+						
+						
 
 						<div id="repos">
 							
