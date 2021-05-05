@@ -120,7 +120,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #1c3b4e;
+	background: var(--color-charcoal);
 	border-radius: 18.7436px 3.54545px 35.4545px;
 	width: 170px;
 	color: #fff;
@@ -139,7 +139,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background: #1c3b4e;
+	background: var(--color-charcoal);
 	border-radius: 35.4545px 3.54545px 18.7436px;
 	width: 170px;
 	color: #fff;
@@ -155,8 +155,90 @@
 }
 
 .download-cv {
+	position: relative;
 	max-width: 231.11px;
 	height: 80px;
 	background-color: var(--color-lightBlue);
 	border-radius: 18.7436px;
+	color: #fff;
+	width: 150px;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.download-cv::after {
+	content: '';
+	background-color: var(--color-charcoal);
+	position: absolute;
+	top: 12%;
+	left: 5%;
+	width: 90%;
+	height: 75%;
+	display: block;
+	border-radius: 10px;
+	align-items: center;
+}
+.download-cv h3 {
+	font-size: 1.2rem;
+}
+
+.download-cv h3,
+.download-cv .fa-download {
+	z-index: 10;
+}
+
+/* PORTFOLIO */
+
+.card {
+	color: #fff;
+	background-image: url(../images/portfolioScreenshot.png);
+	background-size: cover;
+	padding: 10rem 0 0;
+	max-width: 35ch;
+}
+
+.card h2 {
+	color: var(--color-mustardYellow);
+	line-height: 1.6rem;
+}
+
+.card-content {
+	--padding: 1.5rem;
+	padding: var(--padding);
+	background: linear-gradient(
+		hsl(0 0% 0% /0),
+		hsl(20 0% 0% /0.7) 20%,
+		hsl(0 0% 0% /1)
+	);
+	color: var(--color-lightBlue);
+}
+
+.card-title {
+	position: relative;
+	width: max-content;
+}
+
+.card-title::after {
+	content: '';
+	position: absolute;
+	height: 4px;
+	left: calc(var(--padding) * -1);
+	bottom: 0;
+	width: calc(100% + var(--padding));
+	background-color: var(--color-lightOrange);
+}
+
+.button {
+	cursor: pointer;
+	display: inline-block;
+	background-color: var(--color-lightBlue);
+	color: var(--color-charcoal);
+	padding: 0.5em 1.25em;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+}
+
+.button:hover,
+.button:focus {
 }
