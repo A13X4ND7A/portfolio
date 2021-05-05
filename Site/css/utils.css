@@ -1,8 +1,7 @@
 .container {
-	margin: 0 auto;
-	max-width: 1100px;
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
 	overflow: auto;
-	padding: 0 40px;
 }
 
 .flex {
@@ -30,4 +29,8 @@
 
 .charcoal {
 	color: var(--color-charcoal);
+}
+
+.box-shadow {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 11%);
 }
