@@ -42,3 +42,16 @@
 		margin-right: 0.5em;
 	}
 }
+
+/* @media (min-width: 900px) and (max-width: 1330px) {
+	#hire-me {
+		max-width: 52%;
+	}
+}
+*/
+@media (min-width: 900px) {
+	#hire-me {
+		margin: 0 0 0 30px;
+		max-width: 45%;
+	}
+}
