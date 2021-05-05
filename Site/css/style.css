@@ -111,30 +111,28 @@
 	display: inline-block;
 }
 
-.hireMe-box {
-	flex-basis: 100%;
-}
-
 #hire-me {
-	width: 50%;
-	margin-bottom: 40px;
+	margin: 40px 0;
+	max-width: 50%;
 }
 
-.role {
+.hire-me {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #1c3b4e;
+	border-radius: 18.7436px 3.54545px 35.4545px;
+	width: 170px;
 	color: #fff;
-	padding: 5px;
-	background-color: var(--color-charcoal);
-	border-radius: 10px;
-	max-width: 100%;
-	font-size: 1rem;
+	padding: 3px 13px 0 0px;
+	font-size: 0.75rem;
+}
+.hire-me h3 {
+	text-align: center;
 }
 
-.role h3 {
-	color: #fff;
-}
-
-.role ul {
-	font-weight: 500;
+.hire-me ul li.right {
+	margin-left: 15px;
 }
 
 .expLoc {

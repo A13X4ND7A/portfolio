@@ -8,8 +8,8 @@
 		margin-right: 0.2em;
 	}
 
-	.role {
-		font-size: 0.65rem;
+	#hire-me {
+		max-width: 70%;
 	}
 }
 
@@ -31,16 +31,8 @@
 		justify-content: space-between;
 	}
 
-	.hire-me.flex {
-		flex-direction: column;
-	}
 	#hire-me {
-		width: 100%;
-		margin-top: 10px;
-	}
-
-	.role {
-		font-size: 1rem;
+		max-width: 70%;
 	}
 }
 
@@ -49,30 +41,4 @@
 		font-size: 0.75rem;
 		margin-right: 0.5em;
 	}
-
-	/* .role {
-		margin-top: 123px;
-	}
-	#hire-me {
-		width: 70%;
-		margin: -63px 2px 0 -59px;
-	} */
-}
-
-/* ipad */
-@media (min-width: 768px) {
-	/* #hire-me {
-		width: 70%;
-		margin: -6px 2px 0 -59px;
-	}
-	.role {
-		margin-top: 70px;
-	} */
-}
-
-@media (min-width: 800px) {
-	/* #hire-me {
-		width: 49%;
-		margin: 0;
-	} */
 }
