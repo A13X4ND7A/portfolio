@@ -44,15 +44,17 @@
 
 /* GITHUB  AND HIRE ME SECTION */
 
-.cta {
+.cta,
+.contact-me {
 	background: linear-gradient(269.91deg, #eaeaea 10.2%, #c4c4c4 86.89%);
-	padding: 2em 0;
+	padding-bottom: 1em;
 }
 
 .cta-boxes {
 	gap: 30px;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	grid-template-rows: 1fr;
+	margin-top: 2em;
 }
 
 .github-box,
@@ -64,6 +66,13 @@
 	position: relative;
 	padding: 15px;
 	margin: 10px;
+	transition: transform 500ms ease;
+}
+.github-box:hover,
+.hireMe-box:hover,
+.github-box:focus-within,
+.hireMe-box:focus-within {
+	transform: scale(1.02);
 }
 
 .cta .fa-github {
@@ -109,6 +118,13 @@
 	font-size: 0.7rem;
 	margin: 0.2em;
 	display: inline-block;
+}
+
+#repos a {
+	transition: background-color 500ms ease;
+}
+#repos a:hover {
+	background-color: var(--color-mustardYellow);
 }
 
 #hire-me {
@@ -164,6 +180,11 @@
 	width: 150px;
 	font-size: 2rem;
 	cursor: pointer;
+	transition: transform 500ms ease;
+}
+.download-cv:hover,
+.download-cv:focus-within {
+	transform: scale(1.02);
 }
 
 .download-cv::after {
@@ -177,6 +198,11 @@
 	display: block;
 	border-radius: 10px;
 	align-items: center;
+	transition: background-color 500ms ease;
+}
+
+.download-cv:hover.download-cv::after {
+	background-color: var(--color-mustardYellow);
 }
 .download-cv h3 {
 	font-size: 1.2rem;
@@ -189,17 +215,34 @@
 
 /* PORTFOLIO */
 
+.portfolio {
+	margin-bottom: 1em;
+}
+
+.pf {
+	gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	overflow: hidden;
+	padding: 0.25em;
+}
 .card {
 	color: #fff;
 	background-image: url(../images/portfolioScreenshot.png);
 	background-size: cover;
 	padding: 10rem 0 0;
 	max-width: 35ch;
+	border-radius: 18.7436px;
+	overflow: hidden;
+	transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+	transform: scale(1.02);
 }
 
 .card h2 {
 	color: var(--color-mustardYellow);
-	line-height: 1.6rem;
 }
 
 .card-content {
@@ -213,6 +256,10 @@
 	color: var(--color-lightBlue);
 }
 
+.card-body {
+	color: hsla(201, 29%, 74%/0.8);
+}
+
 .card-title {
 	position: relative;
 	width: max-content;
@@ -223,9 +270,12 @@
 	position: absolute;
 	height: 4px;
 	left: calc(var(--padding) * -1);
-	bottom: 0;
+	bottom: -3px;
 	width: calc(100% + var(--padding));
 	background-color: var(--color-lightOrange);
+
+	transform-origin: left;
+	transition: transform 1s ease-in-out;
 }
 
 .button {
@@ -237,8 +287,12 @@
 	border-radius: 8px;
 	text-transform: uppercase;
 	font-size: 0.75rem;
+	font-weight: 600;
+	transition: background-color 500ms ease;
 }
 
 .button:hover,
 .button:focus {
+	background-color: var(--color-mustardYellow);
+	color: #fff;
 }

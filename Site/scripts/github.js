@@ -31,7 +31,7 @@ async function getRepos() {
 	repoList.innerHTML = data
 		.slice(lastFive, length)
 		.map((repoInfo) => {
-			return `<a href="${repoInfo.html_url}" class="repo" target="_blank"> ${repoInfo.name}</a>`;
+			return `<a href="${repoInfo.html_url}" class="repo box-shadow" target="_blank"> ${repoInfo.name}</a>`;
 		})
 		.join('');
 }

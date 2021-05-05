@@ -132,7 +132,7 @@
 	overflow: hidden;
 	margin-top: 3em;
 	color: var(--color-lightBlue);
-	font-size: 4vw;
+	font-size: 3vw;
 	font-weight: 100;
 	border-right: 2px solid var(--color-mustardYellow);
 	-webkit-animation: blinking 0.7s infinite step-end;
