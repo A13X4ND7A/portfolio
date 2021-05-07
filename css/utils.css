@@ -1,0 +1,41 @@
+.container {
+	margin-inline: auto;
+	width: min(90%, 70.5rem);
+	overflow: auto;
+}
+
+.white {
+	background-color: white;
+	opacity: 1;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100%; */
+}
+
+.grid {
+	display: grid;
+}
+
+/* COLOUR CLASSES */
+
+.mustard {
+	color: var(--color-mustardYellow);
+}
+.slate {
+	color: var(--color-slateGrey);
+}
+.silver {
+	color: var(--color-silver);
+}
+
+.charcoal {
+	color: var(--color-charcoal);
+}
+
+.box-shadow {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 11%);
+}
