@@ -34,6 +34,15 @@
 	#hire-me {
 		max-width: 70%;
 	}
+
+	.split {
+		flex-direction: row;
+	}
+
+	.contact-form {
+		border-right: 5px solid var(--color-mustardYellow);
+		padding-right: 2em;
+	}
 }
 
 @media (min-width: 630px) and (max-width: 800px) {

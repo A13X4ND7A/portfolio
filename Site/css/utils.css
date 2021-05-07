@@ -4,6 +4,11 @@
 	overflow: auto;
 }
 
+.white {
+	background-color: white;
+	opacity: 1;
+}
+
 .flex {
 	display: flex;
 	justify-content: center;

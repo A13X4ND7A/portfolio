@@ -66,14 +66,14 @@
 	position: relative;
 	padding: 15px;
 	margin: 10px;
-	transition: transform 500ms ease;
+	/* transition: transform 500ms ease; */
 }
-.github-box:hover,
+/* .github-box:hover,
 .hireMe-box:hover,
 .github-box:focus-within,
 .hireMe-box:focus-within {
 	transform: scale(1.02);
-}
+} */
 
 .cta .fa-github {
 	font-size: 1.5rem;
@@ -180,11 +180,11 @@
 	width: 150px;
 	font-size: 2rem;
 	cursor: pointer;
-	transition: transform 500ms ease;
+	transition: box-shadow 500ms ease;
 }
 .download-cv:hover,
 .download-cv:focus-within {
-	transform: scale(1.02);
+	box-shadow: 0 10px 30px 0px rgba(169, 194, 208, 0.5);
 }
 
 .download-cv::after {
@@ -248,11 +248,7 @@
 .card-content {
 	--padding: 1.5rem;
 	padding: var(--padding);
-	background: linear-gradient(
-		hsl(0 0% 0% /0),
-		hsl(20 0% 0% /0.7) 20%,
-		hsl(0 0% 0% /1)
-	);
+	background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.7) 20%, hsl(0 0% 0% /1));
 	color: var(--color-lightBlue);
 }
 
@@ -273,12 +269,11 @@
 	bottom: -3px;
 	width: calc(100% + var(--padding));
 	background-color: var(--color-lightOrange);
-
 	transform-origin: left;
 	transition: transform 1s ease-in-out;
 }
 
-.button {
+.card-button {
 	cursor: pointer;
 	display: inline-block;
 	background-color: var(--color-lightBlue);
@@ -291,8 +286,86 @@
 	transition: background-color 500ms ease;
 }
 
-.button:hover,
-.button:focus {
+.card-button:hover,
+.card-button:focus {
 	background-color: var(--color-mustardYellow);
 	color: #fff;
+}
+
+/* CONTACT FORM */
+
+.split {
+	background-color: var(--color-lightBlue);
+	border-radius: 18.7436px;
+	padding: 2em;
+	margin: 0.75em;
+	flex-direction: column;
+}
+
+.contact-form {
+	border-bottom: 5px solid var(--color-mustardYellow);
+	padding-bottom: 2em;
+}
+
+.contact-form .flex {
+	flex-direction: column;
+}
+
+.contact-form .form-group {
+	height: 65px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	border: 1px solid var(--color-silver);
+	border-radius: 5px;
+	padding: 0.5em;
+	width: 100%;
+	height: 2em;
+}
+
+.contact-form textarea {
+	height: 10em;
+}
+
+.label-input {
+	color: var(--color-charcoal);
+}
+
+.contact-button {
+	cursor: pointer;
+	padding: 0 1em;
+	min-width: 140px;
+	height: 30px;
+	border-style: none;
+	background-color: var(--color-charcoal);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.4s;
+	box-shadow: 0 10px 30px 0px rgba(43, 66, 83, 0.5);
+	margin-top: 10%;
+}
+
+.contact-button:hover {
+	color: var(--color-charcoal);
+	background-color: var(--color-mustardYellow);
+	box-shadow: 0 10px 30px 0px rgba(197, 158, 88, 0.5);
+}
+
+.fa-arrow-right {
+	margin-left: 10px;
+}
+
+.contact-info {
+	flex-direction: column;
+	font-size: 2rem;
+	align-items: center;
+}
+
+.contact-info ul li {
+}
+
+.copyright {
+	font-size: 0.75rem;
 }

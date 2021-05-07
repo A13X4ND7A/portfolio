@@ -9,14 +9,14 @@
 }
 
 :root {
-	--color-mustardYellow: #c59e58;
-	--color-lightBlue: #aac3d0;
+	--color-mustardYellow: rgb(197, 158, 88);
+	--color-lightBlue: rgb(169, 194, 208);
 	--color-lightOrange: #ee9561;
 	--color-offWhite: #fbf8f3;
 	--color-darkGrey: #363636;
 	--color-night: #0d121b;
 	--color-slateGrey: #556170;
-	--color-charcoal: #2b4253;
+	--color-charcoal: rgb(43, 66, 83);
 	--color-silver: #a9a9a8;
 	--color-platinum: #eaeaea;
 }
@@ -68,4 +68,9 @@ p {
 img {
 	display: block;
 	max-width: 100%;
+}
+
+input,
+textarea {
+	font-family: 'Montserrat', sans-serif;
 }
