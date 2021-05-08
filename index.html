@@ -39,25 +39,47 @@
 					</svg>
 				</button>
 
-				<ul>
-					<li><a id="home" class="nav-link" href="#">Home</a></li>
-					<li><a class="nav-link" href="#skills">Skills</a></li>
-					<li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-					<li><a class="nav-link" href="#contact-me">Contact</a></li>
+				<ul id="nav-menu" class="">
+					<li><a href="#home" class="nav-link nav-link-active">Home</a></li>
+					<li><a href="#skills" class="nav-link">Skills</a></li>
+					<li><a href="#cta" class="nav-link">Github</a></li>
+					<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li><a href="#contact-me" class="nav-link">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="flex hero">
-				<h1 class="hello">Hello, my name is</h1>
-				<div class="name-animation flex">
-					<h1 class="my-name">Alexandra</h1>
+			<section id="home">
+				<div class="flex hero">
+					<h1 class="hello">Hello, my name is</h1>
+					<div class="name-animation flex">
+						<h1 class="my-name">Alexandra</h1>
+					</div>
+					<div id="typing"></div>
 				</div>
-				<div id="typing"></div>
-			</div>
+			</section>
 		</header>
 
 		<div class="container">
 			<section id="skills">
 				<h1 class="section-header"><span class="mustard">My</span><span class="slate"> skills</span></h1>
+
+				<div class="skills-wrapper flex">
+					<p class="skills-info">
+						I have over 15 years of coding experience and a wealth of skills. Here, I have only listed some of the key skills. Over the years, I have also
+						worked with Wordpress and Joomla CMS extensively, and MySql. I continually learn new skills and thrive on bettering myself.
+						<br />
+						I have also worked with Adobe products for many years, particularly Illustrator, Photoshop and XD designing, creating and modifying templates and
+						images. I have also recently picked up Figma.
+					</p>
+					<img
+						class="skills-image"
+						src="images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg"
+						id=""
+						alt="Photo by
+					<a href='https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Glenn Carstens-Peters</a> on
+					<a href='https://unsplash.com/s/photos/web-dev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Unsplash</a>
+					"
+					/>
+				</div>
 				<ul class="grid-wrapper grid">
 					<li class="column">
 						<ul class="grid skill-box">
@@ -65,7 +87,7 @@
 							<li class="skill-list-item flex">
 								<div class="skill-item flex">
 									<div class="bullet"></div>
-									Html
+									HTML
 								</div>
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
@@ -153,7 +175,7 @@
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
-								<div class="skill-level-silver"></div>
+								<div class="skill-level-gold"></div>
 								<div class="skill-level-silver"></div>
 							</li>
 
@@ -174,7 +196,7 @@
 							<li class="skill-list-item flex">
 								<div class="skill-item flex">
 									<div class="bullet"></div>
-									jQuery
+									MongoDb
 								</div>
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
@@ -182,16 +204,16 @@
 								<div class="skill-level-silver"></div>
 								<div class="skill-level-silver"></div>
 							</li>
-							<!--Node-->
+							<!--Git/Github-->
 							<li class="skill-list-item flex">
 								<div class="skill-item flex">
 									<div class="bullet"></div>
-									Node.js
+									Git/Github
 								</div>
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
 								<div class="skill-level-gold"></div>
-								<div class="skill-level-silver"></div>
+								<div class="skill-level-gold"></div>
 								<div class="skill-level-silver"></div>
 							</li>
 						</ul>
@@ -298,8 +320,7 @@
 				<h1 class="section-header"><span class="mustard">Say</span><span class="slate"> Hello</span></h1>
 
 				<div class="split flex box-shadow">
-					<form id="form" class="contact-form">
-						<!-- full name-->
+					<form id="contact-form" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 						<div class="form-group">
 							<label class="label-input" for="name">Full Name</label>
 							<input type="text" name="name" id="name" placeholder="Full Name" />

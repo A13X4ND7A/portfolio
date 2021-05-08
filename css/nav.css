@@ -41,12 +41,37 @@ nav {
 	z-index: 999;
 }
 nav.active {
-	width: 22em;
+	width: 25em;
 }
+
+nav .addBg {
+	background-color: var(--color-lightOrange);
+	color: var(--color-darkGrey);
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: -2px;
+}
+
+nav .addBg li a {
+	color: var(--color-darkGrey);
+}
+
+nav .addBg a:hover {
+	border-bottom: 2px solid var(--color-lightBlue);
+}
+
+nav .addBg a.active {
+	border-bottom: 2px solid var(--color-lightBlue);
+}
+
+.nav-link-active {
+	border-bottom: 2px solid var(--color-lightBlue);
+}
+
 nav ul {
 	display: flex;
 	padding: 0;
-	margin: 0.5em 0 0 0;
+	margin: 2px 0 0 0;
 	width: 0;
 	transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -57,8 +82,7 @@ nav.active ul {
 nav ul li {
 	transform: rotateY(0deg);
 	opacity: 0;
-	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-		opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 nav.active ul li {
 	opacity: 1;
@@ -72,10 +96,10 @@ nav ul a {
 	transition: border-bottom 250ms ease-in;
 }
 nav ul a:hover {
-	border-bottom: 1px solid var(--color-lightOrange);
+	border-bottom: 2px solid var(--color-lightOrange);
 }
 nav ul a.active {
-	border-bottom: 1px solid var(--color-lightOrange);
+	border-bottom: 2px solid var(--color-lightOrange);
 }
 
 nav button,

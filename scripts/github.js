@@ -8,22 +8,21 @@ const repoList = document.getElementById('repos');
 
 async function getUser() {
 	try {
-		const { data } = await axios(APIURL);
-		console.log(data);
+		const {data} = await axios(APIURL);
+
 		//set the html properties to the data brought in
 		avatar.src = data.avatar_url;
 		bio.innerText = data.bio;
 		following.innerHTML = data.following + '<strong>Following</strong>';
 		followers.innerHTML = data.followers + '<strong>Followers</strong>';
-		repositories.innerHTML =
-			data.public_repos + '<strong>Repositories</strong>';
+		repositories.innerHTML = data.public_repos + '<strong>Repositories</strong>';
 	} catch (err) {
 		console.log(err);
 	}
 }
 
 async function getRepos() {
-	const { data } = await axios(APIURL + '/repos');
+	const {data} = await axios(APIURL + '/repos');
 
 	let length = data.length;
 	let lastFive = length - 5;
