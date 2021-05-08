@@ -280,6 +280,10 @@
 	transition: transform 500ms ease;
 }
 
+.film-app {
+	background-image: url(../images/film-app.png);
+}
+
 .card:hover,
 .card:focus-within {
 	transform: scale(1.02);
