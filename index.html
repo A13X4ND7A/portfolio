@@ -13,13 +13,7 @@
 		<link rel="stylesheet" href="css/media.css" />
 
 		<title>Alex Faller - Web Developer</title>
-		<script type="text/javascript">
-			var onloadCallback = function () {
-				grecaptcha.render('cv-download-recaptcha', {
-					'sitekey': '6LcMsMsaAAAAAOzlEMXaX3wGkentyhOAj1RSYySB',
-				});
-			};
-		</script>
+		<script src="recaptcha.js"></script>
 	</head>
 
 	<body>
@@ -379,6 +373,7 @@
 			</div>
 		</section>
 		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
 			integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="

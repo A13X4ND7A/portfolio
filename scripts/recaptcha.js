@@ -8,3 +8,9 @@ download.onclick = () => {
 		response.classList.add('showResponse');
 	}
 };
+
+var onloadCallback = function () {
+	grecaptcha.render('cv-download-recaptcha', {
+		'sitekey': '6LcMsMsaAAAAAOzlEMXaX3wGkentyhOAj1RSYySB',
+	});
+};
