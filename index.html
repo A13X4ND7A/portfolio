@@ -12,8 +12,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/media.css" />
 
-		<title>Alex Faller - Web Developer</title>
-		<script src="recaptcha.js"></script>
+		<title>Alexandra Faller - Web Developer</title>
 	</head>
 
 	<body>
@@ -276,14 +275,10 @@
 					</li>
 				</ul>
 				<div class="flex download-resume">
-					<form action="http://alexfaller.uk/AFaller_NE-Resume2021.pdf" method="POST">
-						<button type="submit" id="cv" class="box-shadow download-cv flex g-recaptcha" data-sitekey="6LcMsMsaAAAAAOzlEMXaX3wGkentyhOAj1RSYySB">
-							<i class="fas fa-download"></i>
-							<h3>resume</h3>
-						</button>
-					</form>
-					<div id="cv-download-recaptcha"></div>
-					<div id="cap-Response" class="">Please check the reCaptcha</div>
+					<button type="submit" id="cv" class="box-shadow download-cv flex" onclick="window.open('AFaller_NE-Resume2021.pdf')" target="_blank">
+						<i class="fas fa-download"></i>
+						<h3>resume</h3>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -372,8 +367,6 @@
 				</div>
 			</div>
 		</section>
-		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
 			integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
