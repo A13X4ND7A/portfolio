@@ -40,13 +40,11 @@ const sections = document.querySelectorAll('section');
 
 //observe the page to see which section is in view and change the nav depending upon this.
 const options = {
-	rootMargin: '0px 0px 100px 0px',
-	threshold: 1,
+	threshold: 0.45,
 };
 const observer = new IntersectionObserver(function (entries, observer) {
 	entries.forEach((entry) => {
-		console.log(entry);
-		if (entry.isIntersecting) {
+		if (entry.isIntersecting && entry.intersectionRatio >= 0.45) {
 			navLinks.forEach((navLink) => {
 				var navLinkId = navLink.hash;
 				navLink.classList.add('nav-link-active');
