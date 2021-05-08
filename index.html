@@ -323,7 +323,7 @@
 				<h1 class="section-header"><span class="mustard">Say</span><span class="slate"> Hello</span></h1>
 
 				<div class="split flex box-shadow">
-					<form id="contact-form" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+					<form action="POST" id="contact-form" class="contact-form" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 						<div class="form-group">
 							<label class="label-input" for="name">Full Name</label>
 							<input type="text" name="name" id="name" placeholder="Full Name" />
@@ -339,6 +339,9 @@
 						<div class="form-group">
 							<label class="label-input" for="Message">Message</label>
 							<textarea name="message" id="message" placeholder="What would you like to say?" rows="7"></textarea>
+						</div>
+						<div class="form-group">
+							<div data-netlify-recaptcha="true"></div>
 						</div>
 
 						<!-- submit -->
