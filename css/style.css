@@ -380,10 +380,20 @@
 
 .contact-form input,
 .contact-form textarea {
-	border: 1px solid var(--color-silver);
+	border: 2px solid var(--color-silver);
 	border-radius: 5px;
 	padding: 0.5em;
 	width: 100%;
+	transition: all 500ms;
+}
+
+input:valid,
+textarea:valid {
+	border: 2px solid green;
+}
+input:invalid,
+textarea:invalid {
+	border: 2px solid red;
 }
 
 .contact-form textarea {

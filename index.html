@@ -326,19 +326,19 @@
 					<form action="POST" id="contact-form" class="contact-form" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 						<div class="form-group">
 							<label class="label-input" for="name">Full Name</label>
-							<input type="text" name="name" id="name" placeholder="Full Name" />
+							<input type="text" name="name" id="name" placeholder="Your Name" required minlength="3" max="100" />
 						</div>
 
 						<!-- email-->
 						<div class="form-group">
 							<label class="label-input" for="email">Email address</label>
-							<input type="email" name="email" id="email" placeholder="email@address.com" />
+							<input type="email" name="email" id="email" placeholder="Your email" required />
 						</div>
 
 						<!-- Message -->
 						<div class="form-group">
 							<label class="label-input" for="Message">Message</label>
-							<textarea name="message" id="message" placeholder="What would you like to say?" rows="7"></textarea>
+							<textarea name="message" id="message" placeholder="What would you like to say?" rows="7" required></textarea>
 						</div>
 						<div class="form-group">
 							<div data-netlify-recaptcha="true"></div>
@@ -365,10 +365,6 @@
 						<li id="copyright-name">Alexandra Faller</li>
 					</ul>
 				</div>
-				<!-- Error/Success message
-				<div class="message-container">
-					<h3 id="message">Don't Hesitate!</h3>
-				</div> -->
 			</div>
 		</section>
 
