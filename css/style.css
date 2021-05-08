@@ -302,6 +302,8 @@
 
 .card-title {
 	position: relative;
+	width: -webkit-max-content;
+	width: -moz-max-content;
 	width: max-content;
 }
 
@@ -354,19 +356,6 @@
 	z-index: -1;
 	right: 0;
 }
-
-/* #contact-me::after {
-	content: '';
-	position: absolute;
-	bottom: -45px;
-	left: 0;
-	background: #eaeaea;
-	transform: skewY(183deg);
-	height: 300px;
-	transform-origin: left;
-	z-index: -1;
-	right: 0;
-} */
 
 .split {
 	background-color: var(--color-lightBlue);
@@ -439,6 +428,21 @@ textarea:invalid {
 
 .cf-submit button:hover .fa-envelope {
 	animation: animateMail 1s ease-in-out infinite reverse;
+}
+
+@-webkit-keyframes animateMail {
+	0% {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(45deg);
+	}
+	90% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 @keyframes animateMail {
