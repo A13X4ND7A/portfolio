@@ -204,7 +204,17 @@
 	font-size: 0.75rem;
 }
 
-.download-cv {
+.download-resume {
+	margin-top: 20px;
+	flex-direction: column;
+}
+#cv-download-recaptcha {
+	margin-top: -60px;
+}
+
+#cv {
+	outline: none;
+	border: 0;
 	position: relative;
 	max-width: 231.11px;
 	height: 80px;
@@ -217,9 +227,18 @@
 	transition: box-shadow 500ms ease;
 	margin-bottom: 2em;
 }
-.download-cv:hover,
-.download-cv:focus-within {
+
+#cv:hover,
+#cv:focus-within {
 	box-shadow: 0 10px 30px 0px rgba(169, 194, 208, 0.5);
+}
+
+#cap-Response {
+	opacity: 0;
+}
+
+#capResponse .showResponse {
+	opacity: 1;
 }
 
 .download-cv::after {

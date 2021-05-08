@@ -42,6 +42,14 @@
 		max-width: 70%;
 	}
 
+	.download-resume {
+		flex-direction: row;
+	}
+	#cv-download-recaptcha {
+		margin-top: -60px;
+		margin-left: 20px;
+	}
+
 	.split {
 		flex-direction: row;
 	}

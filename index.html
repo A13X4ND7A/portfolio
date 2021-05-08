@@ -15,7 +15,7 @@
 		<title>Alex Faller - Web Developer</title>
 		<script type="text/javascript">
 			var onloadCallback = function () {
-				grecaptcha.render('html_element', {
+				grecaptcha.render('cv-download-recaptcha', {
 					'sitekey': '6LcMsMsaAAAAAOzlEMXaX3wGkentyhOAj1RSYySB',
 				});
 			};
@@ -281,14 +281,15 @@
 						</div>
 					</li>
 				</ul>
-				<div id="cv-download" class="flex">
-					<div id="html_element"></div>
-					<form action="AFaller_NE-Resume2021.pdf" method="POST">
+				<div class="flex download-resume">
+					<form action="http://alexfaller.uk/AFaller_NE-Resume2021.pdf" method="POST">
 						<button type="submit" id="cv" class="box-shadow download-cv flex g-recaptcha" data-sitekey="6LcMsMsaAAAAAOzlEMXaX3wGkentyhOAj1RSYySB">
 							<i class="fas fa-download"></i>
 							<h3>resume</h3>
 						</button>
 					</form>
+					<div id="cv-download-recaptcha"></div>
+					<div id="cap-Response" class="">Please check the reCaptcha</div>
 				</div>
 			</div>
 		</section>
