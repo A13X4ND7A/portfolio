@@ -1,6 +1,6 @@
 .line {
 	fill: none;
-	stroke: var(--color-lightOrange);
+	stroke: var(--color-lightBlue);
 	stroke-miterlimit: 10;
 	stroke-width: 2px;
 }
@@ -44,28 +44,32 @@ nav.active {
 	width: 25em;
 }
 
+.inverse .line {
+	stroke: var(--color-charcoal);
+}
+
 nav .addBg {
-	background-color: var(--color-lightOrange);
-	color: var(--color-darkGrey);
+	background-color: var(--color-charcoal);
+	color: var(--color-lightBlue);
 	border-radius: 5px;
 	padding: 5px;
 	margin-top: -2px;
 }
 
 nav .addBg li a {
-	color: var(--color-darkGrey);
+	color: var(--color-lightBlue);
 }
 
-nav .addBg a:hover {
+/* nav .addBg a:hover {
 	border-bottom: 2px solid var(--color-lightBlue);
 }
 
 nav .addBg a.active {
 	border-bottom: 2px solid var(--color-lightBlue);
-}
+} */
 
 .nav-link-active {
-	border-bottom: 2px solid var(--color-lightBlue);
+	border-bottom: 2px solid var(--color-lightOrange);
 }
 
 nav ul {
@@ -89,16 +93,16 @@ nav.active ul li {
 	transform: rotateY(360deg);
 }
 
-nav ul a {
+nav ul li .nav-link {
 	position: relative;
 	color: var(--color-lightBlue);
-	margin: 0 5px;
+	margin: 0 3px;
 	transition: border-bottom 250ms ease-in;
 }
-nav ul a:hover {
+nav ul .nav-link:hover {
 	border-bottom: 2px solid var(--color-lightOrange);
 }
-nav ul a.active {
+nav ul .nav-link.active {
 	border-bottom: 2px solid var(--color-lightOrange);
 }
 
@@ -108,4 +112,8 @@ nav button:active {
 	border: none;
 	outline: none;
 	z-index: 999;
+}
+
+.hire-link {
+	display: block;
 }

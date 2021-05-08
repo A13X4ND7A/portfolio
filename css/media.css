@@ -1,6 +1,9 @@
 @media (max-width: 320px) {
 	nav ul a {
-		font-size: 0.75rem;
+		font-size: 0.6rem;
+	}
+	nav.active ul {
+		width: 220px;
 	}
 
 	.user-info ul li {
@@ -17,6 +20,10 @@
 	/* for the skills section */
 	.column.right {
 		margin-left: 50px;
+	}
+
+	.skills-wrapper .flex {
+		flex-direction: row;
 	}
 
 	/* github box */

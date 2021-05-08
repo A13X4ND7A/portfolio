@@ -34,24 +34,22 @@ window.addEventListener('scroll', function () {
 	}
 });
 
-//observe the page to see which section is in view and change the nav depending upon this.
 const navMenu = document.getElementById('nav-menu');
-const skills = document.getElementById('skills');
+const home = document.getElementById('home');
 const sections = document.querySelectorAll('section');
 
+//observe the page to see which section is in view and change the nav depending upon this.
 const options = {
-	root: null,
-	rootMargin: '0% 0% -10% 0%',
-	threshold: 0.1,
+	rootMargin: '0px 0px 100px 0px',
+	threshold: 1,
 };
 const observer = new IntersectionObserver(function (entries, observer) {
 	entries.forEach((entry) => {
+		console.log(entry);
 		if (entry.isIntersecting) {
 			navLinks.forEach((navLink) => {
 				var navLinkId = navLink.hash;
 				navLink.classList.add('nav-link-active');
-				console.log(entry.target.id);
-				console.log(navLinkId);
 				if (navLinkId != '#' + entry.target.id) {
 					navLink.classList.remove('nav-link-active');
 				}
@@ -64,6 +62,8 @@ sections.forEach((section) => {
 	observer.observe(section);
 });
 
+//change the nav if it is not on the hero section
+
 const bgOptions = {
 	root: null,
 	rootMargin: '-15% 0% -15% 0%',
@@ -73,8 +73,10 @@ const addBgObserver = new IntersectionObserver(function (entries, addBgObserver)
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) {
 			navMenu.classList.add('addBg');
+			burger.classList.add('inverse');
 		} else {
 			navMenu.classList.remove('addBg');
+			burger.classList.remove('inverse');
 		}
 	});
 }, bgOptions);
