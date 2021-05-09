@@ -283,6 +283,9 @@
 .film-app {
 	background-image: url(../images/film-app.png);
 }
+.pokemon {
+	background-image: url(../images/PokemonPokedex.png);
+}
 
 .card:hover,
 .card:focus-within {
