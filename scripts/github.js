@@ -22,13 +22,10 @@ async function getUser() {
 }
 
 async function getRepos() {
-	const {data} = await axios(APIURL + '/repos');
-
-	let length = data.length;
-	let lastFive = length - 5;
+	const {data} = await axios(APIURL + '/repos?sort=updated');
 
 	repoList.innerHTML = data
-		.slice(lastFive, length)
+		.slice(0, 5)
 		.map((repoInfo) => {
 			return `<a href="${repoInfo.html_url}" class="repo box-shadow" target="_blank"> ${repoInfo.name}</a>`;
 		})
