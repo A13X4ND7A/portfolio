@@ -286,6 +286,9 @@
 .pokemon {
 	background-image: url(../images/PokemonPokedex.png);
 }
+.password {
+	background-image: url(../images/password-app.png);
+}
 
 .card:hover,
 .card:focus-within {
