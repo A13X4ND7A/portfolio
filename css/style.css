@@ -268,13 +268,14 @@
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	overflow: hidden;
 	padding: 0.25em;
+	z-index: 99;
 }
 .card {
 	color: #fff;
-	background-image: url(../images/portfolioScreenshot.png);
 	background-size: cover;
 	padding: 10rem 0 0;
-	max-width: 35ch;
+	max-width: 30ch;
+	border: 2px solid var(--color-mustardYellow);
 	border-radius: 18.7436px;
 	overflow: hidden;
 	transition: transform 500ms ease;
