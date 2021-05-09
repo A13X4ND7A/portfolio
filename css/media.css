@@ -22,7 +22,7 @@
 		margin-left: 50px;
 	}
 
-	.skills-wrapper .flex {
+	.skills-wrapper.flex {
 		flex-direction: row;
 	}
 
@@ -126,9 +126,9 @@
 	*::before,
 	*::after {
 		-webkit-animation-duration: 0.01ms !important;
-		        animation-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
 		-webkit-animation-iteration-count: 1 !important;
-		        animation-iteration-count: 1 !important;
+		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
