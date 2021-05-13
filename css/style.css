@@ -290,6 +290,9 @@
 .password {
 	background-image: url(../images/password-app.png);
 }
+.dates {
+	background-image: url(../images/dates.png);
+}
 
 .card:hover,
 .card:focus-within {
