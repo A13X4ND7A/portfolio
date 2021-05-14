@@ -297,6 +297,9 @@
 .quote {
 	background-image: url(../images/quote-gen.png);
 }
+.score {
+	background-image: url(../images/ScoreKeeper.png);
+}
 
 .card:hover,
 .card:focus-within {
