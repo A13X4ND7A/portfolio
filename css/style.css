@@ -10,6 +10,7 @@
 .skills-wrapper .skills-image {
 	height: 20em;
 	border-radius: 8px;
+	margin: 1em;
 }
 
 .grid-wrapper {
@@ -292,6 +293,9 @@
 }
 .dates {
 	background-image: url(../images/dates.png);
+}
+.quote {
+	background-image: url(../images/quote-gen.png);
 }
 
 .card:hover,
