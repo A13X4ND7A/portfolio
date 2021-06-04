@@ -300,6 +300,9 @@
 .score {
 	background-image: url(../images/ScoreKeeper.png);
 }
+.crochet {
+	background-image: url(../images/crochet-site.png);
+}
 
 .card:hover,
 .card:focus-within {
