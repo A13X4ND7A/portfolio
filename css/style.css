@@ -303,10 +303,13 @@
 .crochet {
 	background-image: url(../images/crochet-site.png);
 }
+.sanity {
+	background-image: url(../images/sanity.png);
+}
 
 .card:hover,
 .card:focus-within {
-	transform: scale(1.02);
+	transform: scale(1.01);
 }
 
 .card h2 {
@@ -316,8 +319,9 @@
 .card-content {
 	--padding: 1.5rem;
 	padding: var(--padding);
-	background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.7) 20%, hsl(0 0% 0% /1));
+	background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.7) 5%, hsl(0 0% 0% /1));
 	color: var(--color-lightBlue);
+	min-height: 100%;
 }
 
 .card-body {
