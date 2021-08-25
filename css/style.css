@@ -306,6 +306,9 @@
 .sanity {
 	background-image: url(../images/sanity.png);
 }
+.pt {
+	background-image: url(../images/pt.png);
+}
 
 .card:hover,
 .card:focus-within {
