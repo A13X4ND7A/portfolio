@@ -2,7 +2,7 @@
 var startText = document.getElementById('typing');
 var spanText = document.getElementById('wd-txt');
 
-const textToBeTyped = ['I am a', 'Web Developer..'];
+const textToBeTyped = ['I am a', 'Software Engineer..'];
 var currentMainPhrase = [];
 var currentSpanPhrase = [];
 
